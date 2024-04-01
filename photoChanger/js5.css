@@ -1,0 +1,46 @@
+body{
+    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+}
+img{
+    display: none;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+.block{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.slides{
+    height: 550px;
+    width: 550px;
+}
+.full{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border: 2px solid lightgray;
+    padding: 30px;
+    width: fit-content;
+    border-radius: 30px;
+    background-color: lightgray;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+button:hover{
+    background-color: goldenrod;
+    color: black;
+}

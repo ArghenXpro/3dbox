@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление временем</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        #timeDisplay {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="plusBtn">Plus</button>
+    <button id="minusBtn">Minus</button>
+    <button id="resetBtn">Reset</button>
+
+    <div id="timeDisplay">0</div>
+
+    <script>
+        let time = 0;
+
+        function updateTimeDisplay() {
+            document.getElementById("timeDisplay").textContent = time;
+        }
+
+        function plusTime() {
+            time++;
+            updateTimeDisplay();
+        }
+
+        function minusTime() {
+            if (time > 0) {
+                time--;
+                updateTimeDisplay();
+            }
+        }
+
+        function resetTime() {
+            time = 0;
+            updateTimeDisplay();
+        }
+
+        document.getElementById("plusBtn").addEventListener("click", plusTime);
+        document.getElementById("minusBtn").addEventListener("click", minusTime);
+        document.getElementById("resetBtn").addEventListener("click", resetTime);
+    </script>
+</body>
+
+</html>
