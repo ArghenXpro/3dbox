@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+body {
+    background-color: black; /* Черный фон */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем отступы по умолчанию */
+}
+img { 
+    display: none;
+    width: 500px;
+    height: 600px;
+}
+.block {
+    display: block;
+}
+.full {
+    width: 30%;
+    margin-left: 1050px;
+}
+.buttons>button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    border-radius: 30px;
+    margin : 0 450px;
+    box-shadow: 0px 0px 10px white; /* Тень такого же цвета */
+}
+
+.buttons>button:hover {
+    box-shadow: 0px 0px 10px white; /* Тень такого же цвета */
+    transform: scale(1.05); /* Небольшое увеличение */
+}
+.right {
+    float: right;
+}
+h1 {
+    color: aliceblue;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    /* Replace text-decoration with appropriate property */
+    border-bottom: 1px dotted black;
+}
